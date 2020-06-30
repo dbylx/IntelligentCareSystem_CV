@@ -10,10 +10,11 @@
 
 
 
-注：其他部分连接
+注：其他仓库连接
 
-- 前端部分git地址： 
+- 前端部分git地址:  https://github.com/yongruiwang/IntelligentCareSystem_WEB
+- 后端部分git地址: https://github.com/litterboyDeng/IntelligentCareSystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDA0MDQ4ODgsMTgwNDEwOTI0LC02NT
-E4OTM2NjFdfQ==
+eyJoaXN0b3J5IjpbOTc2NTI0OTUzLDE4MDQxMDkyNCwtNjUxOD
+kzNjYxXX0=
 -->
