@@ -6,6 +6,14 @@
 2. document
 - `会议记录`：每次会议的讨论内容
 - `阶段性里程碑文档` :如需求文档等
+----
+
+
+
+注：其他部分连接
+
+- 前端部分git地址： 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDEwOTI0LC02NTE4OTM2NjFdfQ==
+eyJoaXN0b3J5IjpbLTIwMDA0MDQ4ODgsMTgwNDEwOTI0LC02NT
+E4OTM2NjFdfQ==
 -->
