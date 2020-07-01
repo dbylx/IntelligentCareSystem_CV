@@ -4,7 +4,7 @@
 -  **face_collection**: 包含了义工信息的收录， 以及陌生人的识别。
 - **face_extra_detect**: 包含了人脸的检测与提取。
 - **emotion**: 包含了KNN, ANN人脸的smile表情和neutral表情的分类训练。
-- 
+
 ## 2. document
 - **会议记录**: 每次会议的讨论内容。
 - **阶段性里程碑文档**: 系统开发过程中的阶段性成果，如需求文档等
@@ -17,7 +17,7 @@
 - 前端部分git地址:  https://github.com/yongruiwang/IntelligentCareSystem_WEB
 - 后端部分git地址: https://github.com/litterboyDeng/IntelligentCareSystem
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5OTIyOTA0LDEwMTg5MjM2NzUsNzEyMD
-U2Nzk5LDk3NjUyNDk1MywxODA0MTA5MjQsLTY1MTg5MzY2MV19
-
+eyJoaXN0b3J5IjpbMjQyMDMwMTU1LDkzOTkyMjkwNCwxMDE4OT
+IzNjc1LDcxMjA1Njc5OSw5NzY1MjQ5NTMsMTgwNDEwOTI0LC02
+NTE4OTM2NjFdfQ==
 -->
