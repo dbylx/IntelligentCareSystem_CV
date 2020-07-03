@@ -4,7 +4,6 @@
 image classification with knn
 
 '''
-
 from oldcare.preprocessing import SimplePreprocessor 
 from oldcare.datasets import SimpleDatasetLoader
 from imutils import paths
