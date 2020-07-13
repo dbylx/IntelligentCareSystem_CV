@@ -216,31 +216,31 @@ while True:
 
 			facial_expression_label = emotions[np.argmax(emotion_value_list)]
             
-			# if facial_expression_label == 'Smile': # alert
-			# 	if facial_expression_timing == 0: # just start timing
-			# 		facial_expression_timing = 1
-			# 		facial_expression_start_time = time.time()
-			# 	else: # already started timing
-			# 		facial_expression_end_time = time.time()
-			# 		difference = facial_expression_end_time - facial_expression_start_time
-            #
-			# 		current_time = time.strftime('%Y-%m-%d %H:%M:%S',
-            #                                      time.localtime(time.time()))
-			# 		if difference < facial_expression_limit_time:
-			# 		    print('[INFO] %s, 房间, %s仅笑了 %.1f 秒. 忽略.' %(current_time, id_card_to_name[name], difference))
-			# 		else: # he/she is really smiling
-			# 		    event_desc = '%s正在笑' %(id_card_to_name[name])
-			# 		    event_location = '房间'
-			# 		    print('[EVENT] %s, 房间, %s正在笑.' %(current_time, id_card_to_name[name]))
-			# 		    cv2.imwrite(os.path.join(output_smile_path,
-            #                                      'snapshot_%s.jpg' %(time.strftime('%Y%m%d_%H%M%S'))), frame)# snapshot
-            #
-			# 		    # insert into database
-			# 		    command = '%s inserting.py --event_desc %s --event_type 0 --event_location %s --old_people_id %d' %(python_path, event_desc, event_location, int(name))
-			# 		    p = subprocess.Popen(command, shell=True)
-            #
-			# else: # everything is ok
-			#     facial_expression_timing = 0
+			if facial_expression_label == 'Happy': # alert
+				if facial_expression_timing == 0: # just start timing
+					facial_expression_timing = 1
+					facial_expression_start_time = time.time()
+				else: # already started timing
+					facial_expression_end_time = time.time()
+					difference = facial_expression_end_time - facial_expression_start_time
+
+					current_time = time.strftime('%Y-%m-%d %H:%M:%S',
+                                                 time.localtime(time.time()))
+					if difference < facial_expression_limit_time:
+					    print('[INFO] %s, 房间, %s仅笑了 %.1f 秒. 忽略.' %(current_time, id_card_to_name[name], difference))
+					else: # he/she is really smiling
+					    event_desc = '%s正在笑' %(id_card_to_name[name])
+					    event_location = '房间'
+					    print('[EVENT] %s, 房间, %s正在笑.' %(current_time, id_card_to_name[name]))
+					    cv2.imwrite(os.path.join(output_smile_path,
+                                                 'snapshot_%s.jpg' %(time.strftime('%Y%m%d_%H%M%S'))), frame)# snapshot
+
+					    # insert into database
+					    command = '%s inserting.py --event_desc %s --event_type 0 --event_location %s --old_people_id %d' %(python_path, event_desc, event_location, int(name))
+					    p = subprocess.Popen(command, shell=True)
+
+			else: # everything is ok
+			    facial_expression_timing = 0
             
 		else: # 如果是陌生人，则不检测表情
 			facial_expression_label = ''

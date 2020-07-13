@@ -34,7 +34,7 @@ args = vars(ap.parse_args())
 input_video = args['filename']
 
 # 全局变量
-facial_recognition_model_path = 'info/face_recognition_hog.pickle'  #jian ce ren lian
+facial_recognition_model_path = 'models/face_recognition_hog.pickle'  #jian ce ren lian
 facial_expression_model_path = 'models/face_expression.hdf5'    #fenxi qinggan
 
 output_stranger_path = 'supervision/strangers'
